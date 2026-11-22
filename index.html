@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Favourite Person ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <h1>To My Favourite Person in the World!❤️</h1>
+
+        <p>A little surprise is waiting for you...🫣</p>
+
+        <!-- Birthday Countdown -->
+        <div id="countdown">
+
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+        <button id="surpriseButton" onclick="openSurprise()" disabled>
+            Locked Until 28 November🙈🔒
+        </button>
+
+        <audio id="bgMusic" loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+
+        <button onclick="playMusic()">Play Music 🎶</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

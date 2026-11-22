@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffb6c9, #ff5478, #ff8fa3);
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: white;
+}
+
+#app {
+    width: 90%;
+    max-width: 600px;
+    padding: 45px 25px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(120, 0, 40, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #fff;
+    color: #e91e63;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #ffe0e9;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.gallery img {
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+}
+body {
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ff1493);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
+    overflow-x: hidden;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.floating-heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 25px;
+    animation: floatUp 6s linear forwards;
+    pointer-events: none;
+    z-index: 999;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+.gift-box {
+    font-size: 100px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.gift-box.open {
+    animation: giftOpen 0.9s ease;
+}
+
+@keyframes giftOpen {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2) rotate(-15deg); }
+    50% { transform: scale(1.3) rotate(15deg); }
+    75% { transform: scale(1.5) rotate(-10deg); }
+    100% { transform: scale(1); }
+}
+
+.hidden {
+    display: none;
+}
